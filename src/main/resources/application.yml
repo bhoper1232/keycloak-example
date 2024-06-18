@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: keycloak-example
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/eselpo
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8080/realms/eselpo
+            user-name-attribute: preferred_username
+        registration:
+          keycloak:
+            client-id: springsecurity
+            client-secret: mVQvXj6y0LlRJ5px2ClQ2GyeaATIKNqW
+            scope: openid
+server:
+  port: 8081

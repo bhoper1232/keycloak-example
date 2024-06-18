@@ -1,0 +1,6 @@
+POST http://localhost:8080/realms/eselpo/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=springsecurity&client_secret=mVQvXj6y0LlRJ5px2ClQ2GyeaATIKNqW&username=bhoper&password=password&grant_type=password
+
+<> 2024-06-16T171335.200.json
